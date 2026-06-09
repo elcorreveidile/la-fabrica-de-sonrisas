@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -10,6 +11,13 @@ const nunito = Nunito({
   subsets: ["latin"],
   variable: "--font-nunito",
   display: "swap",
+});
+
+const openSans = localFont({
+  src: "../../public/fonts/OpenSans-Regular.ttf",
+  variable: "--font-open-sans",
+  display: "swap",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -35,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${nunito.variable} h-full`}>
+    <html lang="es" className={`${nunito.variable} ${openSans.variable} h-full`}>
       <head>
         <meta name="robots" content="noindex, nofollow" />
         <script
