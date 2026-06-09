@@ -43,7 +43,7 @@ export default function Hero() {
             </Link>
           </div>
 
-          <div className="mt-8 flex items-center gap-6 text-sm text-[#8b7d72]">
+          <div className="mt-8 flex flex-wrap items-center gap-4 text-sm text-[#8b7d72]">
             <div className="flex items-center gap-1.5">
               <span className="text-[#e07a5f]">⭐⭐⭐⭐⭐</span>
               <span>+300 reseñas 5★</span>
@@ -52,6 +52,18 @@ export default function Hero() {
               <span>🌿</span>
               <span>Mínimamente invasiva</span>
             </div>
+            <div className="flex items-center gap-1.5">
+              <span>🏆</span>
+              <span>3 premios nacionales</span>
+            </div>
+          </div>
+
+          <div className="mt-6 flex flex-wrap gap-2">
+            {["Ortodoncia invisible", "Implantes", "Diseño digital sonrisa", "Periodoncia"].map((t) => (
+              <span key={t} className="text-xs px-3 py-1 rounded-full bg-white border border-[#f5ede0] text-[#8b7d72]">
+                {t}
+              </span>
+            ))}
           </div>
         </div>
 

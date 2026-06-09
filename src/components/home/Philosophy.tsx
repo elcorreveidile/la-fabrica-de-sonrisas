@@ -39,9 +39,9 @@ export default function Philosophy() {
 
           <ul className="space-y-3 mb-8">
             {[
-              "Equipo mayoritariamente femenino, cercano y cálido",
-              "Primera visita de valoración siempre tranquila y sin presión",
-              "Tecnología avanzada, trato artesano",
+              "Escáner intraoral — sin pastas ni cubetas incómodas",
+              "Diseño Digital de la Sonrisa (DSD) — ves el resultado antes de empezar",
+              "Primera visita gratuita, sin presión y sin tecnicismos",
               "Clínica de autor — no somos una franquicia",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">

@@ -41,9 +41,17 @@ export default function MapSection() {
               href="https://www.instagram.com/lafabricadesonrisasgranada/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-[#2d2d2d] hover:text-[#e07a5f] transition-colors"
+              className="font-semibold text-[#2d2d2d] hover:text-[#e07a5f] transition-colors block"
             >
-              @lafabricadesonrisasgranada
+              Instagram
+            </a>
+            <a
+              href="https://www.youtube.com/@lafabricadesonrisas"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-[#8b7d72] hover:text-[#e07a5f] transition-colors"
+            >
+              YouTube
             </a>
           </div>
         </div>

@@ -45,7 +45,13 @@ export default function Footer() {
               <li>
                 <a href="https://www.instagram.com/lafabricadesonrisasgranada/" target="_blank" rel="noopener noreferrer"
                   className="hover:text-white transition-colors text-xs">
-                  @lafabricadesonrisasgranada
+                  Instagram · @lafabricadesonrisasgranada
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@lafabricadesonrisas" target="_blank" rel="noopener noreferrer"
+                  className="hover:text-white transition-colors text-xs">
+                  YouTube · La Fábrica de Sonrisas
                 </a>
               </li>
             </ul>
@@ -58,7 +64,7 @@ export default function Footer() {
             <Link href="/legal/aviso-legal" className="hover:text-white transition-colors">Aviso legal</Link>
             <Link href="/legal/cookies" className="hover:text-white transition-colors">Cookies</Link>
           </div>
-          <p>© 2024 La Fábrica de Sonrisas</p>
+          <p>© 2025 La Fábrica de Sonrisas · Granada</p>
         </div>
       </div>
     </footer>
