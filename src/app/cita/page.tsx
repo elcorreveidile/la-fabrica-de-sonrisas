@@ -44,7 +44,7 @@ export default function CitaPage() {
               "Sin listas de espera — respuesta en 24h",
             ].map((item) => (
               <div key={item} className="flex items-start gap-2 text-sm text-[#8b7d72]">
-                <span className="text-[#7a9e7e] mt-0.5">✓</span>
+                <span className="text-[#067963] mt-0.5">✓</span>
                 <span>{item}</span>
               </div>
             ))}
@@ -77,7 +77,7 @@ export default function CitaPage() {
           </div>
         </div>
 
-        <div className="mt-8 bg-[#7a9e7e]/10 rounded-2xl p-5 text-center text-sm text-[#5a7e5e]">
+        <div className="mt-8 bg-[#c2b97f]/10 rounded-2xl p-5 text-center text-sm text-[#8b7070]">
           <p className="font-semibold mb-1">📅 Versión 2: calendario de reserva online</p>
           <p className="text-xs text-[#8b7d72]">
             En la próxima versión del proyecto incluiremos un calendario interactivo con reserva y confirmación automática por email.

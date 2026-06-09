@@ -138,7 +138,7 @@ export default function PresupuestadorWizard() {
               placeholder="Tu nombre"
               value={nombre}
               onChange={(e) => setNombre(e.target.value)}
-              className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#e07a5f]/30"
+              className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#c2b97f]/40 focus:border-[#c2b97f]"
               required
             />
             <input
@@ -146,7 +146,7 @@ export default function PresupuestadorWizard() {
               placeholder="tu@email.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#e07a5f]/30"
+              className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#c2b97f]/40 focus:border-[#c2b97f]"
               required
             />
             <p className="text-xs text-[#8b7d72]">

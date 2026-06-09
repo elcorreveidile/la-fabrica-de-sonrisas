@@ -8,7 +8,8 @@
   --coral-dark: #c4614a;
   --sage: #7a9e7e;
   --sage-light: #a8c5ab;
-  --sage-dark: #5a7e5e;
+  --sage-dark: #067963;
+  --gold: #c2b97f;
   --cream-dark: #f5ede0;
   --warm-gray: #8b7d72;
 }
@@ -22,7 +23,8 @@
   --color-coral-dark: #c4614a;
   --color-sage: #7a9e7e;
   --color-sage-light: #a8c5ab;
-  --color-sage-dark: #5a7e5e;
+  --color-sage-dark: #067963;
+  --color-gold: #c2b97f;
   --color-warm-gray: #8b7d72;
   --color-cream-dark: #f5ede0;
   --color-charcoal: #2d2d2d;
@@ -45,6 +47,23 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-nunito), var(--font-open-sans), system-ui, sans-serif;
+}
+
+input, select, textarea, label {
+  font-family: var(--font-poppins), var(--font-open-sans), system-ui, sans-serif;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: var(--gold);
+  border-color: var(--gold);
+}
+
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--gold) 50%, transparent);
+  outline-offset: 0px;
+  border-color: var(--gold) !important;
 }
 
 @keyframes fade-in-up {

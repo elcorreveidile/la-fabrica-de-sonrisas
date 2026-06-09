@@ -98,7 +98,7 @@ export default function AdminClient() {
             <div>
               <label className="block text-sm font-medium text-[#2d2d2d] mb-1.5">Contraseña</label>
               <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required
-                className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#e07a5f]/30 bg-[#fdf8f3]" />
+                className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#c2b97f]/40 focus:border-[#c2b97f] bg-[#fdf8f3]" />
             </div>
             <button type="submit" className="w-full py-3 rounded-full bg-[#e07a5f] text-white font-semibold hover:bg-[#c4614a] transition-colors">
               Entrar
@@ -484,7 +484,7 @@ function AdminLeads() {
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
-const inputCls = "w-full rounded-xl border border-[#f5ede0] px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#e07a5f]/30 bg-[#fdf8f3]";
+const inputCls = "w-full rounded-xl border border-[#f5ede0] px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#c2b97f]/40 focus:border-[#c2b97f] bg-[#fdf8f3]";
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
   return (

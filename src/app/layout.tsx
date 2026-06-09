@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Nunito, Poppins } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/layout/Header";
@@ -11,6 +11,13 @@ const nunito = Nunito({
   subsets: ["latin"],
   variable: "--font-nunito",
   display: "swap",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  display: "swap",
+  weight: ["400", "500", "600"],
 });
 
 const openSans = localFont({
@@ -43,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${nunito.variable} ${openSans.variable} h-full`}>
+    <html lang="es" className={`${nunito.variable} ${openSans.variable} ${poppins.variable} h-full`}>
       <head>
         <meta name="robots" content="noindex, nofollow" />
         <script

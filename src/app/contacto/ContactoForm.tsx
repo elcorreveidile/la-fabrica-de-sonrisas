@@ -43,7 +43,7 @@ export default function ContactoForm() {
           value={form.nombre}
           onChange={(e) => setForm({ ...form, nombre: e.target.value })}
           required
-          className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#e07a5f]/30 bg-[#fdf8f3]"
+          className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#c2b97f]/40 focus:border-[#c2b97f] bg-[#fdf8f3]"
         />
       </div>
       <div>
@@ -55,7 +55,7 @@ export default function ContactoForm() {
           value={form.email}
           onChange={(e) => setForm({ ...form, email: e.target.value })}
           required
-          className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#e07a5f]/30 bg-[#fdf8f3]"
+          className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#c2b97f]/40 focus:border-[#c2b97f] bg-[#fdf8f3]"
         />
       </div>
       <div>
@@ -67,7 +67,7 @@ export default function ContactoForm() {
           onChange={(e) => setForm({ ...form, mensaje: e.target.value })}
           required
           rows={4}
-          className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#e07a5f]/30 bg-[#fdf8f3] resize-none"
+          className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#c2b97f]/40 focus:border-[#c2b97f] bg-[#fdf8f3] resize-none"
         />
       </div>
       <p className="text-xs text-[#8b7d72]">Demo — los datos no se almacenan permanentemente.</p>

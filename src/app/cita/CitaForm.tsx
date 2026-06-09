@@ -68,7 +68,7 @@ export default function CitaForm() {
             onChange={(e) => setForm({ ...form, nombre: e.target.value })}
             required
             placeholder="Tu nombre"
-            className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#e07a5f]/30 bg-[#fdf8f3]"
+            className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#c2b97f]/40 focus:border-[#c2b97f] bg-[#fdf8f3]"
           />
         </div>
         <div>
@@ -78,7 +78,7 @@ export default function CitaForm() {
             value={form.telefono}
             onChange={(e) => setForm({ ...form, telefono: e.target.value })}
             placeholder="600 000 000"
-            className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#e07a5f]/30 bg-[#fdf8f3]"
+            className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#c2b97f]/40 focus:border-[#c2b97f] bg-[#fdf8f3]"
           />
         </div>
       </div>
@@ -93,7 +93,7 @@ export default function CitaForm() {
           onChange={(e) => setForm({ ...form, email: e.target.value })}
           required
           placeholder="tu@email.com"
-          className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#e07a5f]/30 bg-[#fdf8f3]"
+          className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#c2b97f]/40 focus:border-[#c2b97f] bg-[#fdf8f3]"
         />
       </div>
 
@@ -103,7 +103,7 @@ export default function CitaForm() {
           <select
             value={form.motivo}
             onChange={(e) => setForm({ ...form, motivo: e.target.value })}
-            className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#e07a5f]/30 bg-[#fdf8f3]"
+            className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#c2b97f]/40 focus:border-[#c2b97f] bg-[#fdf8f3]"
           >
             <option value="">Selecciona...</option>
             {MOTIVOS.map((m) => (
@@ -116,7 +116,7 @@ export default function CitaForm() {
           <select
             value={form.horario}
             onChange={(e) => setForm({ ...form, horario: e.target.value })}
-            className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#e07a5f]/30 bg-[#fdf8f3]"
+            className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#c2b97f]/40 focus:border-[#c2b97f] bg-[#fdf8f3]"
           >
             <option value="">Sin preferencia</option>
             <option value="mañana">Mañana (9:30–13:30)</option>
@@ -132,7 +132,7 @@ export default function CitaForm() {
           onChange={(e) => setForm({ ...form, mensaje: e.target.value })}
           rows={3}
           placeholder="Cualquier cosa que nos ayude a preparar tu visita..."
-          className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#e07a5f]/30 bg-[#fdf8f3] resize-none"
+          className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#c2b97f]/40 focus:border-[#c2b97f] bg-[#fdf8f3] resize-none"
         />
       </div>
 
