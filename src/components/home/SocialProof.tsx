@@ -48,8 +48,14 @@ export default function SocialProof() {
         </div>
 
         <div className="bg-gradient-to-r from-[#e07a5f] to-[#c4614a] rounded-3xl p-8 text-white text-center">
-          <p className="text-2xl font-black mb-2">🏆 Premio Nacional de Salud Bucodental 2022</p>
-          <p className="text-white/80">Reconocimiento a la excelencia clínica — Zona Andalucía Oriental</p>
+          <p className="text-2xl font-black mb-2">🏆 Triple reconocimiento de excelencia</p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-3 text-sm text-white/90">
+            <span>🥇 Premio Nacional Salud Bucodental 2022 · Andalucía Oriental</span>
+            <span className="hidden sm:block text-white/40">|</span>
+            <span>🥇 Premio Nacional de Medicina · Odontología 2023</span>
+            <span className="hidden sm:block text-white/40">|</span>
+            <span>🥇 Premio Europeo Mejor Trayectoria 2023</span>
+          </div>
         </div>
       </div>
     </section>

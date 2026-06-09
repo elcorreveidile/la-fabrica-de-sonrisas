@@ -4,7 +4,7 @@ export default function MapSection() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-black text-[#2d2d2d]">Nos encontrarás en el Realejo</h2>
-          <p className="text-[#8b7d72] mt-2">C. Molinos 34, 18009 Granada · A 5 min del centro histórico</p>
+          <p className="text-[#8b7d72] mt-2">C. Molinos 34, local 2 · 18009 Granada · A 5 min del centro histórico</p>
         </div>
         <div className="rounded-3xl overflow-hidden shadow-lg h-80 md:h-96 bg-[#f5ede0] relative">
           <iframe
@@ -18,21 +18,33 @@ export default function MapSection() {
             title="Mapa La Fábrica de Sonrisas"
           />
         </div>
-        <div className="mt-6 grid sm:grid-cols-3 gap-4 text-center text-sm text-[#8b7d72]">
+        <div className="mt-6 grid sm:grid-cols-4 gap-4 text-center text-sm text-[#8b7d72]">
           <div className="bg-white rounded-2xl p-4 border border-[#f5ede0]">
             <p className="text-lg mb-1">📍</p>
-            <p className="font-semibold text-[#2d2d2d]">C. Molinos 34</p>
+            <p className="font-semibold text-[#2d2d2d]">C. Molinos 34, local 2</p>
             <p>Realejo, Granada</p>
           </div>
           <div className="bg-white rounded-2xl p-4 border border-[#f5ede0]">
             <p className="text-lg mb-1">🕘</p>
             <p className="font-semibold text-[#2d2d2d]">L–V 9:30–18:30</p>
-            <p className="text-xs">(confirmar horario)</p>
+            <p>Sábado y domingo cerrado</p>
           </div>
           <div className="bg-white rounded-2xl p-4 border border-[#f5ede0]">
             <p className="text-lg mb-1">📞</p>
-            <p className="font-semibold text-[#2d2d2d]">958 XXX XXX</p>
-            <p className="text-xs">(placeholder)</p>
+            <a href="tel:958227474" className="font-semibold text-[#2d2d2d] hover:text-[#e07a5f] transition-colors">
+              958 22 74 74
+            </a>
+          </div>
+          <div className="bg-white rounded-2xl p-4 border border-[#f5ede0]">
+            <p className="text-lg mb-1">📱</p>
+            <a
+              href="https://www.instagram.com/lafabricadesonrisasgranada/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[#2d2d2d] hover:text-[#e07a5f] transition-colors"
+            >
+              @lafabricadesonrisasgranada
+            </a>
           </div>
         </div>
       </div>

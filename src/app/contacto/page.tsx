@@ -30,23 +30,30 @@ export default function ContactoPage() {
                 <p>Realejo, 18009 Granada</p>
               </ContactItem>
               <ContactItem icon="📞" title="Teléfono">
-                <a href="tel:958000000" className="hover:text-[#e07a5f] transition-colors">
-                  958 XXX XXX
+                <a href="tel:958227474" className="hover:text-[#e07a5f] transition-colors font-semibold">
+                  958 22 74 74
                 </a>
-                <p className="text-xs text-[#8b7d72]">(número placeholder — por confirmar)</p>
               </ContactItem>
               <ContactItem icon="🕘" title="Horario">
                 <p>Lunes a Viernes: 9:30 – 18:30</p>
-                <p className="text-xs text-[#8b7d72]">(por confirmar)</p>
+                <p className="text-[#8b7d72]">Sábado y domingo: cerrado</p>
               </ContactItem>
-              <ContactItem icon="💬" title="WhatsApp">
+              <ContactItem icon="💬" title="WhatsApp / redes">
                 <a
-                  href={`https://wa.me/34958000000?text=${encodeURIComponent("Hola, me gustaría pedir cita en La Fábrica de Sonrisas 😊")}`}
+                  href={`https://wa.me/34958227474?text=${encodeURIComponent("Hola, me gustaría pedir cita en La Fábrica de Sonrisas 😊")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366] text-white text-sm font-semibold hover:bg-[#1fba57] transition-colors"
                 >
                   Escribir por WhatsApp
+                </a>
+                <a
+                  href="https://www.instagram.com/lafabricadesonrisasgranada/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-flex items-center gap-1 text-sm text-[#e07a5f] hover:underline"
+                >
+                  @lafabricadesonrisasgranada
                 </a>
               </ContactItem>
             </div>

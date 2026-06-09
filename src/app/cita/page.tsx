@@ -32,7 +32,7 @@ export default function CitaPage() {
           <p className="text-[#8b7d72] text-sm mb-4">¿Prefieres contactarnos directamente?</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href={`https://wa.me/34958000000?text=${encodeURIComponent("Hola, me gustaría pedir cita en La Fábrica de Sonrisas 😊")}`}
+              href={`https://wa.me/34958227474?text=${encodeURIComponent("Hola, me gustaría pedir cita en La Fábrica de Sonrisas 😊")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#25D366] text-white font-semibold hover:bg-[#1fba57] transition-colors"
@@ -40,13 +40,12 @@ export default function CitaPage() {
               💬 WhatsApp
             </a>
             <a
-              href="tel:958000000"
+              href="tel:958227474"
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-full border-2 border-[#e07a5f] text-[#e07a5f] font-semibold hover:bg-[#fdf4eb] transition-colors"
             >
-              📞 958 XXX XXX
+              📞 958 22 74 74
             </a>
           </div>
-          <p className="text-xs text-[#8b7d72] mt-3">* Número placeholder — por confirmar</p>
         </div>
 
         <div className="mt-8 bg-[#7a9e7e]/10 rounded-2xl p-5 text-center text-sm text-[#5a7e5e]">

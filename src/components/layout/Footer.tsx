@@ -35,10 +35,15 @@ export default function Footer() {
               <li>18009 Granada</li>
               <li className="flex items-center gap-1">
                 <span>📞</span>
-                <a href="tel:958000000" className="hover:text-white transition-colors">958 XXX XXX</a>
-                <span className="text-xs text-gray-500">(confirmar)</span>
+                <a href="tel:958227474" className="hover:text-white transition-colors">958 22 74 74</a>
               </li>
-              <li>L–V 9:30–18:30 <span className="text-xs text-gray-500">(confirmar)</span></li>
+              <li>L–V 9:30–18:30</li>
+              <li>
+                <a href="https://www.instagram.com/lafabricadesonrisasgranada/" target="_blank" rel="noopener noreferrer"
+                  className="hover:text-white transition-colors text-xs">
+                  @lafabricadesonrisasgranada
+                </a>
+              </li>
             </ul>
           </div>
         </div>

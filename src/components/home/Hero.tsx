@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-12 items-center">
         <div className="animate-fade-in-up">
           <span className="inline-block mb-4 px-4 py-1.5 rounded-full bg-[#e07a5f]/10 text-[#e07a5f] text-sm font-semibold">
-            🏆 Premio Nacional Salud Bucodental 2022 — Andalucía Oriental
+            🏆 Premio Nacional de Medicina · Odontología 2023 — Dra. Hunayda Bumedien
           </span>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#2d2d2d] leading-tight mb-6">
