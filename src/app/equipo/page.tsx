@@ -30,18 +30,18 @@ const equipo = [
     badges: [],
   },
   {
-    nombre: "Fran",
-    especialidad: "Higiene bucodental · Periodoncia preventiva",
-    bio: "El corazón de la salud periodontal en La Fábrica de Sonrisas. Cada revisión y limpieza es un momento de cuidado y educación para que tu boca esté siempre en su mejor estado.",
+    nombre: "Fran Torres",
+    especialidad: "Higienista Bucodental",
+    bio: "Fran se fue a Segovia, pero luego volvió.",
     imagen: "https://www.lafabricadesonrisasgranada.com/wp-content/uploads/lfds-fran-scaled.webp",
     badges: [],
   },
   {
-    nombre: "Javier",
-    especialidad: "Administración · Coordinación de pacientes",
-    bio: "La primera persona con la que hablas y la última que ves al salir. Javier se encarga de que todo funcione y de que tú te sientas en buenas manos desde el primer momento.",
+    nombre: "Dr. Javier Manzano",
+    especialidad: "Cirugía Bucal · Implantología",
+    bio: "Dedicación exclusiva a la cirugía bucal, implantología e implantoprótesis. Doctor Internacional por la UGR, Premio Nacional Fin de Carrera y autor de más de 50 artículos internacionales. Fan incondicional de King África.",
     imagen: "https://www.lafabricadesonrisasgranada.com/wp-content/uploads/lfds-javier.webp",
-    badges: [],
+    badges: ["🏆 Premio Nacional Fin de Carrera", "📚 +50 artículos internacionales"],
   },
 ];
 

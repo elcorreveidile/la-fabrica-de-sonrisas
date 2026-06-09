@@ -20,7 +20,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center group">
           <Image
-            src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/07_Verbena_FABRICA_SONRISAS_Marca_fecha_negroajuste.png"
+            src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/01_Verbena_FABRICA_SONRISAS_Marca-fecha.png"
             alt="La Fábrica de Sonrisas"
             width={160}
             height={56}
