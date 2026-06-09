@@ -40,15 +40,24 @@ const equipo = [
 
 export default function EquipoPage() {
   return (
-    <div className="pt-16">
-      <div className="bg-gradient-to-br from-[#fdf8f3] to-[#fdf4eb] py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-black text-[#2d2d2d] mb-4">
+    <div className="pt-16 pb-0">
+      <div className="relative h-80 md:h-[28rem] overflow-hidden">
+        <Image
+          src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/imagen-nueva-eqipo-la-fabrica-de-sonrisas.png"
+          alt="Equipo de La Fábrica de Sonrisas"
+          fill
+          className="object-cover object-top"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2d2d2d]/60 via-transparent to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 px-4 pb-10 text-center text-white">
+          <h1 className="text-4xl md:text-5xl font-black mb-3 drop-shadow">
             Las personas detrás de{" "}
-            <span className="text-[#e07a5f]">tu sonrisa</span>
+            <span className="text-[#f2a98e]">tu sonrisa</span>
           </h1>
-          <p className="text-[#8b7d72] text-lg max-w-xl mx-auto">
-            Un equipo especializado, en constante formación y actualización, con un único objetivo: que salgas de aquí con una sonrisa.
+          <p className="text-white/85 text-lg max-w-xl mx-auto drop-shadow">
+            Un equipo especializado, en constante formación, con un único objetivo: que salgas de aquí con una sonrisa.
           </p>
         </div>
       </div>
