@@ -15,6 +15,9 @@ export interface Treatment {
   orden: number;
   updated_at: string;
   faq?: FAQ[];
+  imagen_url?: string;
+  imagen2_url?: string;
+  contenido_extra?: string;
 }
 
 export interface FAQ {

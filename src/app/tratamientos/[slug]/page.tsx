@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { TREATMENTS_FALLBACK } from "@/lib/treatments-data";
 import { CATEGORY_LABELS, CATEGORY_ICONS } from "@/types";
 import { formatPriceRange } from "@/lib/utils";
@@ -82,9 +83,36 @@ export default async function TreatmentDetailPage({ params }: Props) {
           </div>
         )}
 
+        {treatment.imagen_url && (
+          <div className={`mb-8 grid gap-4 ${treatment.imagen2_url ? "sm:grid-cols-2" : ""}`}>
+            <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-md">
+              <Image
+                src={treatment.imagen_url}
+                alt={treatment.nombre}
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, 50vw"
+              />
+            </div>
+            {treatment.imagen2_url && (
+              <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-md">
+                <Image
+                  src={treatment.imagen2_url}
+                  alt={`${treatment.nombre} — detalle`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                />
+              </div>
+            )}
+          </div>
+        )}
+
         <div className="prose prose-sm max-w-none mb-8">
           <h2 className="text-xl font-bold text-[#2d2d2d] mb-3">Sobre este tratamiento</h2>
-          <p className="text-[#8b7d72] leading-relaxed">{treatment.descripcion_larga}</p>
+          {treatment.descripcion_larga.split("\n\n").map((parrafo, i) => (
+            <p key={i} className="text-[#8b7d72] leading-relaxed mb-4">{parrafo}</p>
+          ))}
         </div>
 
         {treatment.para_quien && (
