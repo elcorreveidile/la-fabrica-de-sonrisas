@@ -16,9 +16,9 @@ const equipo = [
     badges: ["🏆 Premio Nacional 2023", "🏆 Premio Europeo 2023"],
   },
   {
-    nombre: "Marta",
-    especialidad: "Odontología general · Odontopediatría",
-    bio: "Especialista en hacer que los peques (y los que no lo son tanto) se sientan cómodos en el sillón. Con una paciencia infinita y un trato cercano que convierte cada visita en una experiencia tranquila.",
+    nombre: "Marta Salvador",
+    especialidad: "Gestión de Agenda · Atención al Paciente",
+    bio: "La primera sonrisa que te recibe, la voz tras el teléfono y la persona con la que Whatsappeas. Perfeccionista, siempre sonriente y con una de las mejores tartas de queso de la provincia. Experta en rutas de senderismo por Granada: pregúntale, se las sabe todas. También le gustan los animales y las pelis de serie Z.",
     imagen: "https://www.lafabricadesonrisasgranada.com/wp-content/uploads/lfds-marta.webp",
     badges: [],
   },
