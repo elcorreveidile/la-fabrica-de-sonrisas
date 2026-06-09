@@ -17,6 +17,7 @@ export interface Treatment {
   faq?: FAQ[];
   imagen_url?: string;
   imagen2_url?: string;
+  imagen3_url?: string;
   contenido_extra?: string;
 }
 

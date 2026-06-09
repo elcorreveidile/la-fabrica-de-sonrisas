@@ -85,24 +85,17 @@ export default async function TreatmentDetailPage({ params }: Props) {
 
         {treatment.imagen_url && (
           <div className={`mb-8 grid gap-4 ${treatment.imagen2_url ? "sm:grid-cols-2" : ""}`}>
-            <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-md">
-              <Image
-                src={treatment.imagen_url}
-                alt={treatment.nombre}
-                fill
-                className="object-cover"
-                sizes="(max-width: 640px) 100vw, 50vw"
-              />
+            <div className={`relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-md ${treatment.imagen3_url ? "" : ""}`}>
+              <Image src={treatment.imagen_url} alt={treatment.nombre} fill className="object-cover" sizes="(max-width: 640px) 100vw, 50vw" />
             </div>
             {treatment.imagen2_url && (
               <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-md">
-                <Image
-                  src={treatment.imagen2_url}
-                  alt={`${treatment.nombre} — detalle`}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 100vw, 50vw"
-                />
+                <Image src={treatment.imagen2_url} alt={`${treatment.nombre} — detalle`} fill className="object-cover" sizes="(max-width: 640px) 100vw, 50vw" />
+              </div>
+            )}
+            {treatment.imagen3_url && (
+              <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-md sm:col-span-2">
+                <Image src={treatment.imagen3_url} alt={`${treatment.nombre} — vista adicional`} fill className="object-cover" sizes="100vw" />
               </div>
             )}
           </div>
