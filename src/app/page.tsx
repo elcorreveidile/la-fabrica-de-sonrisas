@@ -13,8 +13,15 @@ export default function HomePage() {
       <SocialProof />
       <Philosophy />
 
-      <section className="py-20 bg-gradient-to-r from-[#e07a5f] to-[#c4614a] text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+      <section className="relative py-20 bg-gradient-to-r from-[#e07a5f] to-[#c4614a] text-white overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/verbena_FABRICASONRISAS_dientes_04.png"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-luminosity pointer-events-none"
+        />
+        <div className="relative max-w-4xl mx-auto px-4 text-center">
           <p className="text-5xl mb-6">🧮</p>
           <h2 className="text-3xl md:text-4xl font-black mb-4">
             ¿Cuánto puede costar tu tratamiento?

@@ -120,8 +120,8 @@ export default function EquipoPage() {
           </div>
           <div className="relative aspect-square rounded-3xl overflow-hidden">
             <Image
-              src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/verbena_FABRICASONRISAS_dientes_04.png"
-              alt="Instalaciones de la clínica"
+              src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/como-lo-hacemos-fabrica-de-sonrisas.webp"
+              alt="Cómo trabajamos en La Fábrica de Sonrisas"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
