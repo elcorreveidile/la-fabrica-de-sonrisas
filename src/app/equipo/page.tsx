@@ -23,9 +23,9 @@ const equipo = [
     badges: [],
   },
   {
-    nombre: "Juanfran",
-    especialidad: "Implantología · Cirugía oral",
-    bio: "Especialista en implantes y cirugía oral. Su precisión y experiencia garantizan los mejores resultados en los procedimientos más complejos, siempre con el máximo confort para el paciente.",
+    nombre: "Juanfran de Haro",
+    especialidad: "Gerencia · Atención al paciente",
+    bio: "Se encarga de la gestión administrativa y financiera de La Fábrica. También hace lo que puede en marketing y el ámbito digital. Tipo simpático, educado y resolutivo. En sus ratos libres: películas raras, baloncesto y escritura. MBA por la UPV y experto en gestión de clínicas dentales.",
     imagen: "https://www.lafabricadesonrisasgranada.com/wp-content/uploads/lfds-juanfran.webp",
     badges: [],
   },
