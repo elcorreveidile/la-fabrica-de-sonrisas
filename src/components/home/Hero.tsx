@@ -7,6 +7,9 @@ export default function Hero() {
       {/* Decorative circles */}
       <div className="absolute top-20 right-0 w-96 h-96 rounded-full bg-[#e07a5f]/10 blur-3xl pointer-events-none" />
       <div className="absolute bottom-20 left-0 w-80 h-80 rounded-full bg-[#7a9e7e]/10 blur-3xl pointer-events-none" />
+      {/* Brand SVG decoration */}
+      <img src="/deco-dots.svg" alt="" aria-hidden="true" className="absolute top-10 left-0 w-64 h-64 opacity-60 pointer-events-none select-none" />
+      <img src="/deco-dots.svg" alt="" aria-hidden="true" className="absolute bottom-10 right-0 w-48 h-48 opacity-40 pointer-events-none select-none rotate-45" />
 
       <div className="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-12 items-center">
         <div className="animate-fade-in-up">

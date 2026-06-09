@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Philosophy() {
@@ -7,12 +6,11 @@ export default function Philosophy() {
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         <div className="relative">
           <div className="relative w-full aspect-square rounded-3xl overflow-hidden">
-            <Image
-              src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/verbena_FABRICASONRISAS_dientes_03.png"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/imgi_9_Verbena_La-Fabrica-de-Sonrisas_Web_059Gif.gif"
               alt="Equipo de La Fábrica de Sonrisas"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="absolute -top-4 -right-4 bg-[#7a9e7e] text-white rounded-2xl p-4 text-center shadow-lg">
