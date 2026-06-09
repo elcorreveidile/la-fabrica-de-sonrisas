@@ -23,20 +23,22 @@ export const WIZARD_STEPS: WizardStep[] = [
     descripcion: "Elige la opción que mejor describe lo que buscas. Puedes cambiarla después.",
     opciones: [
       { label: "Alinear mis dientes", value: "ortodoncia", emoji: "😁", nextStepId: "ortodoncia-tipo" },
-      { label: "Reponer piezas perdidas", value: "implantes", emoji: "🦷", nextStepId: "implantes-cantidad" },
-      { label: "Blanquear / estética", value: "estetica", emoji: "✨", nextStepId: "estetica-tipo" },
-      { label: "Dolor, revisión o caries", value: "general", emoji: "😬", nextStepId: "general-tipo" },
-      { label: "Encías / periodoncia", value: "periodoncia", emoji: "🌿", nextStepId: null, treatmentSlugs: ["limpieza-bucal", "tratamiento-periodontal"] },
+      { label: "Reponer piezas perdidas", value: "implantes", emoji: "🦷", nextStepId: "implantes-tipo" },
+      { label: "Mejorar el aspecto de mi sonrisa", value: "estetica", emoji: "✨", nextStepId: "estetica-tipo" },
+      { label: "Revisión, limpieza o caries", value: "general", emoji: "😬", nextStepId: "general-tipo" },
+      { label: "Encías o periodoncia", value: "periodoncia", emoji: "🌿", nextStepId: "periodoncia-tipo" },
       { label: "Es para mi hijo/a", value: "ninos", emoji: "👶", nextStepId: null, treatmentSlugs: ["revision-infantil", "selladores-fisuras", "ortodoncia-infantil"] },
     ],
   },
   {
     id: "ortodoncia-tipo",
-    pregunta: "¿Prefieres que se vea o que sea invisible?",
+    pregunta: "¿Qué tipo de ortodoncia te interesa?",
     descripcion: "Hay opciones para todos los gustos y presupuestos.",
     opciones: [
-      { label: "Invisible (alineadores)", value: "invisible", emoji: "👻", nextStepId: "ortodoncia-edad", treatmentSlugs: ["ortodoncia-invisible"] },
-      { label: "Brackets (más económico)", value: "brackets", emoji: "🔩", nextStepId: "ortodoncia-edad", treatmentSlugs: ["brackets-metalicos"] },
+      { label: "Ortodoncia invisible (alineadores)", value: "invisible", emoji: "👻", nextStepId: "ortodoncia-edad", treatmentSlugs: ["ortodoncia-invisible"] },
+      { label: "Brackets tradicionales", value: "brackets", emoji: "🔩", nextStepId: "ortodoncia-edad", treatmentSlugs: ["brackets-metalicos"] },
+      { label: "Disyunción palatina (maxilar estrecho)", value: "disyuncion", emoji: "🦷", nextStepId: null, treatmentSlugs: ["disyuncion-palatina"] },
+      { label: "No lo sé, necesito valoración", value: "valoracion", emoji: "🤔", nextStepId: "ortodoncia-edad", treatmentSlugs: ["brackets-metalicos", "ortodoncia-invisible"] },
     ],
   },
   {
@@ -45,6 +47,17 @@ export const WIZARD_STEPS: WizardStep[] = [
     opciones: [
       { label: "Para mí (adulto/a)", value: "adulto", emoji: "🧑", nextStepId: null, treatmentSlugs: [] },
       { label: "Para mi hijo/a (menor)", value: "nino", emoji: "👦", nextStepId: null, treatmentSlugs: ["ortodoncia-infantil"] },
+    ],
+  },
+  {
+    id: "implantes-tipo",
+    pregunta: "¿Qué tipo de solución buscas?",
+    descripcion: "En La Fábrica de Sonrisas ofrecemos varias opciones según tu caso.",
+    opciones: [
+      { label: "Implante convencional", value: "convencional", emoji: "🔩", nextStepId: "implantes-cantidad", treatmentSlugs: [] },
+      { label: "Autotrasplante dental (usar un diente propio)", value: "autotrasplante", emoji: "🌱", nextStepId: null, treatmentSlugs: ["autotrasplante-dental"] },
+      { label: "Microimplantes", value: "micro", emoji: "🔬", nextStepId: null, treatmentSlugs: ["microimplantes-dentales"] },
+      { label: "No lo sé, necesito valoración", value: "no-se", emoji: "🤔", nextStepId: "implantes-cantidad", treatmentSlugs: [] },
     ],
   },
   {
@@ -63,7 +76,8 @@ export const WIZARD_STEPS: WizardStep[] = [
     opciones: [
       { label: "Color / blanqueamiento", value: "blanqueo", emoji: "🤍", nextStepId: null, treatmentSlugs: ["blanqueamiento-dental"] },
       { label: "Forma y color (carillas)", value: "carillas", emoji: "💎", nextStepId: null, treatmentSlugs: ["carillas-porcelana", "composite-estetico"] },
-      { label: "Quiero una transformación completa", value: "integral", emoji: "✨", nextStepId: null, treatmentSlugs: ["blanqueamiento-dental", "carillas-porcelana"] },
+      { label: "Ver cómo quedaría antes de decidir (DSD)", value: "dsd", emoji: "🖥️", nextStepId: null, treatmentSlugs: ["diseno-digital-sonrisa"] },
+      { label: "Quiero una transformación completa", value: "integral", emoji: "✨", nextStepId: null, treatmentSlugs: ["diseno-digital-sonrisa", "blanqueamiento-dental", "carillas-porcelana"] },
     ],
   },
   {
@@ -73,7 +87,16 @@ export const WIZARD_STEPS: WizardStep[] = [
       { label: "Revisión general / limpieza", value: "revision", emoji: "🔍", nextStepId: null, treatmentSlugs: ["revision-diagnostico", "limpieza-bucal"] },
       { label: "Caries o dolor de muela", value: "caries", emoji: "😣", nextStepId: null, treatmentSlugs: ["empaste", "endodoncia"] },
       { label: "Diente roto o muy dañado", value: "roto", emoji: "💥", nextStepId: null, treatmentSlugs: ["corona-dental", "implante-unitario"] },
-      { label: "Muela del juicio", value: "muela-juicio", emoji: "😰", nextStepId: null, treatmentSlugs: ["extraccion-muela-juicio"] },
+      { label: "Extracción / muela del juicio", value: "extraccion", emoji: "😰", nextStepId: null, treatmentSlugs: ["extraccion-muela-juicio"] },
+    ],
+  },
+  {
+    id: "periodoncia-tipo",
+    pregunta: "¿Cómo están tus encías?",
+    opciones: [
+      { label: "Limpieza y revisión preventiva", value: "preventiva", emoji: "🌿", nextStepId: null, treatmentSlugs: ["limpieza-bucal", "tratamiento-periodontal"] },
+      { label: "Sangran o están retraídas", value: "enfermedad", emoji: "🩸", nextStepId: null, treatmentSlugs: ["tratamiento-periodontal"] },
+      { label: "Caso avanzado, ya me lo han dicho", value: "avanzado", emoji: "⚠️", nextStepId: null, treatmentSlugs: ["tratamiento-periodontal", "cirugia-periodontal"] },
     ],
   },
 ];
