@@ -53,7 +53,8 @@ export default function EquipoPage() {
           src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/imagen-nueva-eqipo-la-fabrica-de-sonrisas.png"
           alt="Equipo de La Fábrica de Sonrisas"
           fill
-          className="object-cover object-top"
+          className="object-cover"
+          style={{ objectPosition: "center 15%" }}
           priority
           sizes="100vw"
         />
