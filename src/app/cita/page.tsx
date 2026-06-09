@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import CitaForm from "./CitaForm";
 
 export const metadata: Metadata = {
@@ -25,10 +26,38 @@ export default function CitaPage() {
         </div>
       </div>
 
-      <div className="max-w-xl mx-auto px-4 py-12">
+      <div className="max-w-4xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-10 items-start">
+        <div>
+          <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-lg mb-6">
+            <Image
+              src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/primera-visita.webp"
+              alt="Primera visita en La Fábrica de Sonrisas"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          </div>
+          <div className="space-y-3">
+            {[
+              "Primera valoración gratuita y sin compromiso",
+              "Te explicamos todo antes de empezar",
+              "Sin listas de espera — respuesta en 24h",
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-2 text-sm text-[#8b7d72]">
+                <span className="text-[#7a9e7e] mt-0.5">✓</span>
+                <span>{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div>
         <CitaForm />
 
-        <div className="mt-10 text-center">
+        </div>
+      </div>
+
+      <div className="max-w-xl mx-auto px-4 pb-12">
+        <div className="mt-0 text-center">
           <p className="text-[#8b7d72] text-sm mb-4">¿Prefieres contactarnos directamente?</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -56,5 +85,6 @@ export default function CitaPage() {
         </div>
       </div>
     </div>
+
   );
 }
