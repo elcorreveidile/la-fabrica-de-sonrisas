@@ -12,28 +12,35 @@ const equipo = [
     nombre: "Dra. Hunayda Bumedien Hach Abdelgani",
     especialidad: "Dirección clínica · Ortodoncia · Estética dental",
     bio: "Fundadora de La Fábrica de Sonrisas. Licenciada en Odontología por la UGR, Máster en Ortodoncia y Ortopedia Dentofacial por la UAL y Máster en el Sistema Invisalign. Pionera en odontología integrativa en Granada. Premio Nacional de Medicina (Odontología) 2023 y Premio Europeo Mejor Trayectoria Profesional 2023.",
-    imagen: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80",
+    imagen: "https://www.lafabricadesonrisasgranada.com/wp-content/uploads/lfds-hunayda-scaled.webp",
     badges: ["🏆 Premio Nacional 2023", "🏆 Premio Europeo 2023"],
   },
   {
     nombre: "Marta",
     especialidad: "Odontología general · Odontopediatría",
     bio: "Especialista en hacer que los peques (y los que no lo son tanto) se sientan cómodos en el sillón. Con una paciencia infinita y un trato cercano que convierte cada visita en una experiencia tranquila.",
-    imagen: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80",
-    badges: [],
-  },
-  {
-    nombre: "María",
-    especialidad: "Higiene bucodental · Periodoncia preventiva",
-    bio: "El corazón de la salud periodontal en La Fábrica de Sonrisas. Cada revisión y limpieza es un momento de cuidado y educación para que tu boca esté siempre en su mejor estado.",
-    imagen: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80",
+    imagen: "https://www.lafabricadesonrisasgranada.com/wp-content/uploads/lfds-marta.webp",
     badges: [],
   },
   {
     nombre: "Juanfran",
     especialidad: "Implantología · Cirugía oral",
     bio: "Especialista en implantes y cirugía oral. Su precisión y experiencia garantizan los mejores resultados en los procedimientos más complejos, siempre con el máximo confort para el paciente.",
-    imagen: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&q=80",
+    imagen: "https://www.lafabricadesonrisasgranada.com/wp-content/uploads/lfds-juanfran.webp",
+    badges: [],
+  },
+  {
+    nombre: "Fran",
+    especialidad: "Higiene bucodental · Periodoncia preventiva",
+    bio: "El corazón de la salud periodontal en La Fábrica de Sonrisas. Cada revisión y limpieza es un momento de cuidado y educación para que tu boca esté siempre en su mejor estado.",
+    imagen: "https://www.lafabricadesonrisasgranada.com/wp-content/uploads/lfds-fran-scaled.webp",
+    badges: [],
+  },
+  {
+    nombre: "Javier",
+    especialidad: "Administración · Coordinación de pacientes",
+    bio: "La primera persona con la que hablas y la última que ves al salir. Javier se encarga de que todo funcione y de que tú te sientas en buenas manos desde el primer momento.",
+    imagen: "https://www.lafabricadesonrisasgranada.com/wp-content/uploads/lfds-javier.webp",
     badges: [],
   },
 ];
@@ -63,7 +70,7 @@ export default function EquipoPage() {
       </div>
 
       <div className="max-w-5xl mx-auto px-4 py-12">
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
           {equipo.map((persona) => (
             <div key={persona.nombre} className="bg-white rounded-3xl border border-[#f5ede0] overflow-hidden hover:shadow-md transition-shadow">
               <div className="relative h-48">
