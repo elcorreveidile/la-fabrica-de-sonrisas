@@ -8,7 +8,7 @@ export default function Philosophy() {
         <div className="relative">
           <div className="relative w-full aspect-square rounded-3xl overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=700&q=80"
+              src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/verbena_FABRICASONRISAS_dientes_03.png"
               alt="Equipo de La Fábrica de Sonrisas"
               fill
               className="object-cover"

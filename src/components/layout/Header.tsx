@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -17,14 +18,15 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#fdf8f3]/95 backdrop-blur-sm border-b border-[#f5ede0]">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-full bg-[#e07a5f] flex items-center justify-center text-white font-bold text-sm">
-            FS
-          </div>
-          <span className="font-bold text-[#2d2d2d] text-lg leading-tight hidden sm:block">
-            La Fábrica<br />
-            <span className="text-[#e07a5f] text-sm font-semibold">de Sonrisas</span>
-          </span>
+        <Link href="/" className="flex items-center group">
+          <Image
+            src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/07_Verbena_FABRICA_SONRISAS_Marca_fecha_negroajuste.png"
+            alt="La Fábrica de Sonrisas"
+            width={160}
+            height={56}
+            className="h-10 w-auto object-contain"
+            priority
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-1">

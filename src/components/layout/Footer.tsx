@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -6,11 +7,14 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <div className="flex items-center gap-2 mb-3">
-              <div className="w-8 h-8 rounded-full bg-[#e07a5f] flex items-center justify-center text-white font-bold text-sm">
-                FS
-              </div>
-              <span className="font-bold text-white">La Fábrica de Sonrisas</span>
+            <div className="mb-3">
+              <Image
+                src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/07_Verbena_FABRICA_SONRISAS_Marca_fecha_negroajuste.png"
+                alt="La Fábrica de Sonrisas"
+                width={160}
+                height={56}
+                className="h-10 w-auto object-contain brightness-0 invert"
+              />
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
               Odontología integrativa y mínimamente invasiva en el corazón del Realejo, Granada.

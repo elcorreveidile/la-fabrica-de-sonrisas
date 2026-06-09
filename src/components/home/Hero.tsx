@@ -55,7 +55,7 @@ export default function Hero() {
         <div className="relative hidden md:block">
           <div className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80"
+              src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/verbena_FABRICASONRISAS_dientes_01.png"
               alt="Clínica dental La Fábrica de Sonrisas, Granada"
               fill
               className="object-cover"

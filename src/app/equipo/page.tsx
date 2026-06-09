@@ -120,7 +120,7 @@ export default function EquipoPage() {
           </div>
           <div className="relative aspect-square rounded-3xl overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=700&q=80"
+              src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/verbena_FABRICASONRISAS_dientes_04.png"
               alt="Instalaciones de la clínica"
               fill
               className="object-cover"
