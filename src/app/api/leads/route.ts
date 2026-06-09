@@ -9,22 +9,10 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Campos requeridos: nombre, email, origen" }, { status: 400 });
     }
 
-    // Try to save to Supabase if configured
-    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-    const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
-
-    if (supabaseUrl && serviceKey && !supabaseUrl.includes("tu-proyecto")) {
-      const { createAdminClient } = await import("@/lib/supabase/admin");
-      const supabase = createAdminClient();
-      await supabase.from("leads").insert({
-        nombre,
-        email,
-        telefono: telefono || null,
-        mensaje: mensaje || null,
-        origen,
-        resumen_presupuesto: resumen_presupuesto || null,
-        demo: true,
-      });
+    // Save to Vercel Postgres if configured
+    if (process.env.POSTGRES_URL) {
+      const { saveLead } = await import("@/lib/db");
+      await saveLead({ nombre, email, telefono, mensaje, origen, resumen_presupuesto });
     }
 
     return NextResponse.json({ ok: true });

@@ -1,59 +1,64 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { createClient } from "@/lib/supabase/client";
-import type { User } from "@supabase/supabase-js";
 
 type AdminView = "login" | "dashboard" | "treatments" | "leads";
 
+interface Treatment {
+  id: string;
+  nombre: string;
+  categoria: string;
+  precio_min: number;
+  precio_max: number;
+  visible: boolean;
+  es_precio_real: boolean;
+}
+
+interface Lead {
+  id: string;
+  nombre: string;
+  email: string;
+  origen: string;
+  created_at: string;
+}
+
 export default function AdminClient() {
   const [view, setView] = useState<AdminView>("login");
-  const [user, setUser] = useState<User | null>(null);
-  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(true);
-
-  const supabase = createClient();
+  const [authed, setAuthed] = useState(false);
 
   useEffect(() => {
-    supabase.auth.getSession().then(({ data }) => {
-      if (data.session?.user) {
-        setUser(data.session.user);
-        setView("dashboard");
-      }
-      setLoading(false);
-    });
+    if (sessionStorage.getItem("admin_authed") === "1") {
+      setAuthed(true);
+      setView("dashboard");
+    }
   }, []);
 
   async function handleLogin(e: React.FormEvent) {
     e.preventDefault();
     setError("");
-    const { error: err } = await supabase.auth.signInWithPassword({ email, password });
-    if (err) {
-      setError(err.message);
-    } else {
-      const { data } = await supabase.auth.getUser();
-      setUser(data.user);
+    const res = await fetch("/api/admin/auth", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ password }),
+    });
+    if (res.ok) {
+      sessionStorage.setItem("admin_authed", "1");
+      setAuthed(true);
       setView("dashboard");
+    } else {
+      setError("Contraseña incorrecta");
     }
   }
 
-  async function handleLogout() {
-    await supabase.auth.signOut();
-    setUser(null);
+  function handleLogout() {
+    sessionStorage.removeItem("admin_authed");
+    setAuthed(false);
     setView("login");
   }
 
-  if (loading) {
-    return (
-      <div className="pt-16 min-h-screen flex items-center justify-center">
-        <p className="text-[#8b7d72]">Cargando...</p>
-      </div>
-    );
-  }
-
-  if (view === "login") {
+  if (!authed || view === "login") {
     return (
       <div className="pt-16 min-h-screen bg-[#fdf8f3] flex items-center justify-center px-4">
         <div className="w-full max-w-sm">
@@ -67,21 +72,8 @@ export default function AdminClient() {
 
           <form onSubmit={handleLogin} className="bg-white rounded-3xl border border-[#f5ede0] p-6 space-y-4">
             {error && (
-              <div className="bg-red-50 text-red-600 text-sm px-4 py-3 rounded-xl">
-                {error}
-              </div>
+              <div className="bg-red-50 text-red-600 text-sm px-4 py-3 rounded-xl">{error}</div>
             )}
-            <div>
-              <label className="block text-sm font-medium text-[#2d2d2d] mb-1.5">Email</label>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                placeholder="admin@fabricasonrisas.es"
-                className="w-full rounded-xl border border-[#f5ede0] px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#e07a5f]/30 bg-[#fdf8f3]"
-              />
-            </div>
             <div>
               <label className="block text-sm font-medium text-[#2d2d2d] mb-1.5">Contraseña</label>
               <input
@@ -101,8 +93,7 @@ export default function AdminClient() {
           </form>
 
           <div className="mt-4 bg-[#fdf4eb] rounded-2xl p-4 text-xs text-[#8b7d72] text-center">
-            <strong>Demo:</strong> admin@fabricasonrisas.es / FabricaDemo2024
-            <br />(Configura credenciales reales en Supabase Auth)
+            Configura <code>ADMIN_PASSWORD</code> en las variables de entorno de Vercel.
           </div>
         </div>
       </div>
@@ -111,7 +102,6 @@ export default function AdminClient() {
 
   return (
     <div className="pt-16 min-h-screen bg-[#fdf8f3]">
-      {/* Admin nav */}
       <div className="bg-white border-b border-[#f5ede0] px-4 py-3">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4">
@@ -146,7 +136,7 @@ export default function AdminClient() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 py-8">
-        {view === "dashboard" && <AdminDashboard user={user} setView={setView} />}
+        {view === "dashboard" && <AdminDashboard setView={setView} />}
         {view === "treatments" && <AdminTreatments />}
         {view === "leads" && <AdminLeads />}
       </div>
@@ -154,12 +144,11 @@ export default function AdminClient() {
   );
 }
 
-function AdminDashboard({ user, setView }: { user: User | null; setView: (v: AdminView) => void }) {
+function AdminDashboard({ setView }: { setView: (v: AdminView) => void }) {
   return (
     <div>
-      <h1 className="text-2xl font-black text-[#2d2d2d] mb-2">Bienvenida, {user?.email}</h1>
+      <h1 className="text-2xl font-black text-[#2d2d2d] mb-2">Panel de administración</h1>
       <p className="text-[#8b7d72] mb-8">Desde aquí puedes gestionar todos los contenidos de tu web.</p>
-
       <div className="grid sm:grid-cols-3 gap-4">
         {[
           { icon: "🦷", title: "Tratamientos", desc: "Añade, edita u oculta tratamientos y sus precios", action: "treatments" },
@@ -182,23 +171,21 @@ function AdminDashboard({ user, setView }: { user: User | null; setView: (v: Adm
 }
 
 function AdminTreatments() {
-  const [treatments, setTreatments] = useState<{ id: string; nombre: string; categoria: string; precio_min: number; precio_max: number; visible: boolean; es_precio_real: boolean }[]>([]);
+  const [treatments, setTreatments] = useState<Treatment[]>([]);
   const [loading, setLoading] = useState(true);
-  const supabase = createClient();
 
   useEffect(() => {
-    supabase
-      .from("treatments")
-      .select("id, nombre, categoria, precio_min, precio_max, visible, es_precio_real")
-      .order("orden")
-      .then(({ data }) => {
-        setTreatments(data ?? []);
-        setLoading(false);
-      });
+    fetch("/api/admin/treatments")
+      .then((r) => r.json())
+      .then((data) => { setTreatments(data.treatments ?? []); setLoading(false); });
   }, []);
 
   async function toggleVisible(id: string, current: boolean) {
-    await supabase.from("treatments").update({ visible: !current }).eq("id", id);
+    await fetch("/api/admin/treatments", {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id, visible: !current }),
+    });
     setTreatments((prev) => prev.map((t) => t.id === id ? { ...t, visible: !current } : t));
   }
 
@@ -208,16 +195,12 @@ function AdminTreatments() {
     <div>
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-xl font-black text-[#2d2d2d]">Tratamientos ({treatments.length})</h2>
-        <p className="text-xs text-[#8b7d72] bg-[#fdf4eb] px-3 py-1 rounded-full">
-          Conecta Supabase para edición completa
-        </p>
       </div>
 
       {treatments.length === 0 ? (
         <div className="bg-white rounded-3xl border border-[#f5ede0] p-8 text-center text-[#8b7d72]">
           <p className="text-4xl mb-3">🔌</p>
-          <p className="font-semibold">Conecta tu base de datos Supabase para ver y gestionar los tratamientos.</p>
-          <p className="text-sm mt-2">Configura las variables de entorno en Vercel y ejecuta el seed SQL.</p>
+          <p className="font-semibold">Conecta Vercel Postgres y ejecuta el seed para ver los tratamientos.</p>
         </div>
       ) : (
         <div className="bg-white rounded-3xl border border-[#f5ede0] overflow-hidden">
@@ -262,20 +245,13 @@ function AdminTreatments() {
 }
 
 function AdminLeads() {
-  const [leads, setLeads] = useState<{ id: string; nombre: string; email: string; origen: string; created_at: string }[]>([]);
+  const [leads, setLeads] = useState<Lead[]>([]);
   const [loading, setLoading] = useState(true);
-  const supabase = createClient();
 
   useEffect(() => {
-    supabase
-      .from("leads")
-      .select("id, nombre, email, origen, created_at")
-      .order("created_at", { ascending: false })
-      .limit(50)
-      .then(({ data }) => {
-        setLeads(data ?? []);
-        setLoading(false);
-      });
+    fetch("/api/admin/leads")
+      .then((r) => r.json())
+      .then((data) => { setLeads(data.leads ?? []); setLoading(false); });
   }, []);
 
   function exportCSV() {
@@ -310,7 +286,6 @@ function AdminLeads() {
         <div className="bg-white rounded-3xl border border-[#f5ede0] p-8 text-center text-[#8b7d72]">
           <p className="text-4xl mb-3">📭</p>
           <p className="font-semibold">Aún no hay leads.</p>
-          <p className="text-sm mt-2">Aparecerán aquí cuando alguien rellene un formulario o el presupuestador.</p>
         </div>
       ) : (
         <div className="bg-white rounded-3xl border border-[#f5ede0] overflow-hidden">
