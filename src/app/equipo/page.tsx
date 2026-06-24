@@ -50,7 +50,7 @@ export default function EquipoPage() {
     <div className="pt-16 pb-0">
       <div className="relative h-80 md:h-[28rem] overflow-hidden">
         <Image
-          src="/images/clinica-sala.jpg"
+          src="/images/clinica-recepcion.jpg"
           alt="Equipo de la clínica dental"
           fill
           className="object-cover"
