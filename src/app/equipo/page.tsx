@@ -12,35 +12,35 @@ const equipo = [
     nombre: "Dra. Ana García",
     especialidad: "Dirección clínica · Ortodoncia · Estética dental",
     bio: "Fundadora de la clínica. Licenciada en Odontología, Máster en Ortodoncia y Ortopedia Dentofacial y Máster en el Sistema Invisalign. Pionera en odontología integrativa. Premio de Excelencia en Odontología 2023.",
-    imagen: "https://placehold.co/400x400/f5ede0/8b7d72?text=Dra.+Garcia",
+    imagen: "/images/equipo-grupal.png",
     badges: ["🏆 Premio Excelencia 2023"],
   },
   {
     nombre: "Marta López",
     especialidad: "Gestión de Agenda · Atención al Paciente",
     bio: "La primera sonrisa que te recibe, la voz tras el teléfono y la persona con la que Whatsappeas. Perfeccionista, siempre sonriente. Experta en hacer que cada paciente se sienta como en casa desde el primer momento.",
-    imagen: "https://placehold.co/400x400/f5ede0/8b7d72?text=Marta+Lopez",
+    imagen: "/images/equipo-marta-lopez.png",
     badges: [],
   },
   {
     nombre: "Juan Fernández",
     especialidad: "Gerencia · Atención al paciente",
     bio: "Se encarga de la gestión administrativa y financiera de la clínica. También hace lo que puede en marketing y el ámbito digital. Tipo simpático, educado y resolutivo. MBA y experto en gestión de clínicas dentales.",
-    imagen: "https://placehold.co/400x400/f5ede0/8b7d72?text=Juan+Fernandez",
+    imagen: "/images/equipo-juan-fernandez.png",
     badges: [],
   },
   {
     nombre: "Francisco Ruiz",
     especialidad: "Higienista Bucodental",
     bio: "Experto en higiene bucodental y periodoncia preventiva. Meticuloso, cercano y con una habilidad especial para que la revisión se pase volando. Sus pacientes siempre salen con los dientes brillando.",
-    imagen: "https://placehold.co/400x400/f5ede0/8b7d72?text=Francisco+Ruiz",
+    imagen: "/images/primera-visita.png",
     badges: [],
   },
   {
     nombre: "Dr. Carlos Martínez",
     especialidad: "Cirugía Bucal · Implantología",
     bio: "Dedicación exclusiva a la cirugía bucal, implantología e implantoprótesis. Doctor por la Universidad Complutense, autor de más de 50 artículos internacionales. Premio Nacional Fin de Carrera.",
-    imagen: "https://placehold.co/400x400/f5ede0/8b7d72?text=Dr.+Martinez",
+    imagen: "/images/sonrisa-resultado.png",
     badges: ["🏆 Premio Nacional Fin de Carrera", "📚 +50 artículos internacionales"],
   },
 ];
@@ -50,7 +50,7 @@ export default function EquipoPage() {
     <div className="pt-16 pb-0">
       <div className="relative h-80 md:h-[28rem] overflow-hidden">
         <Image
-          src="https://placehold.co/1400x600/2d2d2d/f2a98e?text=Nuestro+equipo"
+          src="/images/clinica-sala.jpg"
           alt="Equipo de la clínica dental"
           fill
           className="object-cover"
@@ -137,7 +137,7 @@ export default function EquipoPage() {
           </div>
           <div className="relative aspect-square rounded-3xl overflow-hidden">
             <Image
-              src="https://placehold.co/600x600/f5ede0/8b7d72?text=Como+trabajamos"
+              src="/images/equipo-grupal.png"
               alt="Cómo trabajamos en la clínica"
               fill
               className="object-cover"

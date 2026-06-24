@@ -70,8 +70,8 @@ export default function Hero() {
         <div className="relative hidden md:block">
           <div className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="https://placehold.co/800x1000/f5ede0/8b7d72?text=Clinica+Dental"
-              alt="Clínica dental de ejemplo"
+              src="/images/sonrisa-resultado.png"
+              alt="Resultado de tratamiento dental"
               fill
               className="object-cover"
               priority

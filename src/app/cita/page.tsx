@@ -30,7 +30,7 @@ export default function CitaPage() {
         <div>
           <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-lg mb-6">
             <Image
-              src="https://placehold.co/800x600/f5ede0/8b7d72?text=Primera+visita"
+              src="/images/primera-visita.png"
               alt="Primera visita en la clínica dental"
               fill
               className="object-cover"

@@ -12,7 +12,7 @@ export default function ContactoPage() {
     <div className="pt-16">
       <div className="relative h-64 md:h-80 overflow-hidden">
         <Image
-          src="https://placehold.co/1400x500/2d2d2d/f2a98e?text=Clinica+Dental+Ejemplo"
+          src="/images/clinica-recepcion.jpg"
           alt="Clínica Dental Ejemplo"
           fill
           className="object-cover"

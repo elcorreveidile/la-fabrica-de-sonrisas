@@ -8,7 +8,7 @@ export default function Philosophy() {
           <div className="relative w-full aspect-square rounded-3xl overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://placehold.co/600x600/f5ede0/8b7d72?text=Nuestro+equipo"
+              src="/images/equipo-grupal.png"
               alt="Equipo de la clínica"
               className="w-full h-full object-cover"
             />
