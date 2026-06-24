@@ -12,7 +12,7 @@ const equipo = [
     nombre: "Dra. Ana García",
     especialidad: "Dirección clínica · Ortodoncia · Estética dental",
     bio: "Fundadora de la clínica. Licenciada en Odontología, Máster en Ortodoncia y Ortopedia Dentofacial y Máster en el Sistema Invisalign. Pionera en odontología integrativa. Premio de Excelencia en Odontología 2023.",
-    imagen: "/images/equipo-grupal.png",
+    imagen: "/images/equipo-ana-garcia.png",
     badges: ["🏆 Premio Excelencia 2023"],
   },
   {
@@ -33,14 +33,14 @@ const equipo = [
     nombre: "Francisco Ruiz",
     especialidad: "Higienista Bucodental",
     bio: "Experto en higiene bucodental y periodoncia preventiva. Meticuloso, cercano y con una habilidad especial para que la revisión se pase volando. Sus pacientes siempre salen con los dientes brillando.",
-    imagen: "/images/primera-visita.png",
+    imagen: "/images/equipo-francisco-ruiz.png",
     badges: [],
   },
   {
     nombre: "Dr. Carlos Martínez",
     especialidad: "Cirugía Bucal · Implantología",
     bio: "Dedicación exclusiva a la cirugía bucal, implantología e implantoprótesis. Doctor por la Universidad Complutense, autor de más de 50 artículos internacionales. Premio Nacional Fin de Carrera.",
-    imagen: "/images/sonrisa-resultado.png",
+    imagen: "/images/equipo-carlos-martinez.png",
     badges: ["🏆 Premio Nacional Fin de Carrera", "📚 +50 artículos internacionales"],
   },
 ];
