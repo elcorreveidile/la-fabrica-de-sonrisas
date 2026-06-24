@@ -3,26 +3,26 @@ export default function MapSection() {
     <section className="py-16 bg-[#fdf8f3]">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-black text-[#2d2d2d]">Nos encontrarás en el Realejo</h2>
-          <p className="text-[#8b7d72] mt-2">C. Molinos 34, local 2 · 18009 Granada · A 5 min del centro histórico</p>
+          <h2 className="text-3xl font-black text-[#2d2d2d]">Nos encontrarás en el centro</h2>
+          <p className="text-[#8b7d72] mt-2">Calle Mayor 1, local 2 · 28013 Madrid · En pleno corazón de la ciudad</p>
         </div>
         <div className="rounded-3xl overflow-hidden shadow-lg h-80 md:h-96 bg-[#f5ede0] relative">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3177.1766555832447!2d-3.5984!3d37.1760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcb69e1b19e5%3A0x4b5b3e3e3e3e3e3e!2sCalle%20de%20los%20Molinos%2C%2034%2C%2018009%20Granada!5e0!3m2!1ses!2ses!4v1"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-3.7100%2C40.4100%2C-3.6900%2C40.4200&layer=mapnik&marker=40.4168%2C-3.7038"
             width="100%"
             height="100%"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Mapa La Fábrica de Sonrisas"
+            title="Mapa clínica dental ejemplo"
           />
         </div>
         <div className="mt-6 grid sm:grid-cols-4 gap-4 text-center text-sm text-[#8b7d72]">
           <div className="bg-white rounded-2xl p-4 border border-[#f5ede0]">
             <p className="text-lg mb-1">📍</p>
-            <p className="font-semibold text-[#2d2d2d]">C. Molinos 34, local 2</p>
-            <p>Realejo, Granada</p>
+            <p className="font-semibold text-[#2d2d2d]">Calle Mayor 1, local 2</p>
+            <p>Centro, Madrid</p>
           </div>
           <div className="bg-white rounded-2xl p-4 border border-[#f5ede0]">
             <p className="text-lg mb-1">🕘</p>
@@ -31,28 +31,14 @@ export default function MapSection() {
           </div>
           <div className="bg-white rounded-2xl p-4 border border-[#f5ede0]">
             <p className="text-lg mb-1">📞</p>
-            <a href="tel:958227474" className="font-semibold text-[#2d2d2d] hover:text-[#e07a5f] transition-colors">
-              958 22 74 74
+            <a href="tel:900000000" className="font-semibold text-[#2d2d2d] hover:text-[#e07a5f] transition-colors">
+              900 000 000
             </a>
           </div>
           <div className="bg-white rounded-2xl p-4 border border-[#f5ede0]">
             <p className="text-lg mb-1">📱</p>
-            <a
-              href="https://www.instagram.com/lafabricadesonrisasgranada/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-[#2d2d2d] hover:text-[#e07a5f] transition-colors block"
-            >
-              Instagram
-            </a>
-            <a
-              href="https://www.youtube.com/@lafabricadesonrisas"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-[#8b7d72] hover:text-[#e07a5f] transition-colors"
-            >
-              YouTube
-            </a>
+            <span className="font-semibold text-[#2d2d2d] block">Instagram</span>
+            <span className="text-sm text-[#8b7d72]">YouTube</span>
           </div>
         </div>
       </div>

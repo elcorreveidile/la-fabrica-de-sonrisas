@@ -16,7 +16,7 @@ export default function HomePage() {
       <section className="relative py-20 bg-gradient-to-r from-[#e07a5f] to-[#c4614a] text-white overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/verbena_FABRICASONRISAS_dientes_04.png"
+          src="https://placehold.co/1200x600/e07a5f/ffffff?text=."
           alt=""
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-luminosity pointer-events-none"

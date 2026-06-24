@@ -91,7 +91,7 @@ export default function AdminClient() {
           <div className="text-center mb-8">
             <div className="w-12 h-12 rounded-full bg-[#e07a5f] flex items-center justify-center text-white font-bold mx-auto mb-3">FS</div>
             <h1 className="text-2xl font-black text-[#2d2d2d]">Panel de administración</h1>
-            <p className="text-[#8b7d72] text-sm mt-1">La Fábrica de Sonrisas</p>
+            <p className="text-[#8b7d72] text-sm mt-1">Clínica Dental Ejemplo</p>
           </div>
           <form onSubmit={handleLogin} className="bg-white rounded-3xl border border-[#f5ede0] p-6 space-y-4">
             {error && <div className="bg-red-50 text-red-600 text-sm px-4 py-3 rounded-xl">{error}</div>}

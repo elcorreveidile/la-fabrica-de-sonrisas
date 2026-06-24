@@ -8,8 +8,8 @@ export default function Philosophy() {
           <div className="relative w-full aspect-square rounded-3xl overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/imgi_9_Verbena_La-Fabrica-de-Sonrisas_Web_059Gif.gif"
-              alt="Equipo de La Fábrica de Sonrisas"
+              src="https://placehold.co/600x600/f5ede0/8b7d72?text=Nuestro+equipo"
+              alt="Equipo de la clínica"
               className="w-full h-full object-cover"
             />
           </div>
@@ -33,7 +33,7 @@ export default function Philosophy() {
           </p>
           <p className="text-[#8b7d72] leading-relaxed mb-6">
             Somos especialistas en atender a <strong>pacientes con miedo al dentista</strong>. Nuestra consulta
-            en el Realejo granadino tiene ese algo diferente: te explicamos todo, vamos a tu ritmo
+            tiene ese algo diferente: te explicamos todo, vamos a tu ritmo
             y nos quedamos sin dormir si no te vamos con una sonrisa.
           </p>
 

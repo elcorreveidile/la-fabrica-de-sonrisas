@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-12 items-center">
         <div className="animate-fade-in-up">
           <span className="inline-block mb-4 px-4 py-1.5 rounded-full bg-[#e07a5f]/10 text-[#e07a5f] text-sm font-semibold">
-            🏆 Premio Nacional de Medicina · Odontología 2023 — Dra. Hunayda Bumedien
+            🏆 Premio de Excelencia en Odontología · Clínica Ejemplo
           </span>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#2d2d2d] leading-tight mb-6">
@@ -24,7 +24,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg text-[#8b7d72] leading-relaxed mb-8 max-w-lg">
-            ¿Llevas tiempo aplazando esa visita? En La Fábrica de Sonrisas lo hacemos diferente:
+            ¿Llevas tiempo aplazando esa visita? En nuestra clínica lo hacemos diferente:
             sin prisa, sin miedo, con mucho mimo. Tu boca en buenas manos, y tú, tranquilo/a.
           </p>
 
@@ -54,7 +54,7 @@ export default function Hero() {
             </div>
             <div className="flex items-center gap-1.5">
               <span>🏆</span>
-              <span>3 premios nacionales</span>
+              <span>Premios de excelencia</span>
             </div>
           </div>
 
@@ -70,8 +70,8 @@ export default function Hero() {
         <div className="relative hidden md:block">
           <div className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/verbena_FABRICASONRISAS_dientes_01.png"
-              alt="Clínica dental La Fábrica de Sonrisas, Granada"
+              src="https://placehold.co/800x1000/f5ede0/8b7d72?text=Clinica+Dental"
+              alt="Clínica dental de ejemplo"
               fill
               className="object-cover"
               priority

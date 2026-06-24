@@ -4,7 +4,7 @@ import CitaForm from "./CitaForm";
 
 export const metadata: Metadata = {
   title: "Pide cita",
-  description: "Reserva tu primera visita en La Fábrica de Sonrisas. Primera valoración gratuita y sin compromiso.",
+  description: "Reserva tu primera visita en la Clínica Dental Ejemplo. Primera valoración gratuita y sin compromiso.",
 };
 
 export default function CitaPage() {
@@ -30,8 +30,8 @@ export default function CitaPage() {
         <div>
           <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-lg mb-6">
             <Image
-              src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/primera-visita.webp"
-              alt="Primera visita en La Fábrica de Sonrisas"
+              src="https://placehold.co/800x600/f5ede0/8b7d72?text=Primera+visita"
+              alt="Primera visita en la clínica dental"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -61,7 +61,7 @@ export default function CitaPage() {
           <p className="text-[#8b7d72] text-sm mb-4">¿Prefieres contactarnos directamente?</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href={`https://wa.me/34958227474?text=${encodeURIComponent("Hola, me gustaría pedir cita en La Fábrica de Sonrisas 😊")}`}
+              href={`https://wa.me/34900000000?text=${encodeURIComponent("Hola, me gustaría pedir cita 😊")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#25D366] text-white font-semibold hover:bg-[#1fba57] transition-colors"
@@ -69,10 +69,10 @@ export default function CitaPage() {
               💬 WhatsApp
             </a>
             <a
-              href="tel:958227474"
+              href="tel:900000000"
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-full border-2 border-[#e07a5f] text-[#e07a5f] font-semibold hover:bg-[#fdf4eb] transition-colors"
             >
-              📞 958 22 74 74
+              📞 900 000 000
             </a>
           </div>
         </div>

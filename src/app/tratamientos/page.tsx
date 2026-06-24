@@ -4,7 +4,7 @@ import { TREATMENTS_FALLBACK } from "@/lib/treatments-data";
 
 export const metadata: Metadata = {
   title: "Tratamientos",
-  description: "Catálogo completo de tratamientos dentales en La Fábrica de Sonrisas, Granada. Ortodoncia, implantes, estética, periodoncia, cirugía oral y odontopediatría.",
+  description: "Catálogo completo de tratamientos dentales. Ortodoncia, implantes, estética, periodoncia, cirugía oral y odontopediatría.",
 };
 
 export default function TratamientosPage() {

@@ -3,9 +3,9 @@
 import { MessageCircle } from "lucide-react";
 
 export default function WhatsAppButton() {
-  const numero = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "34958227474";
+  const numero = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "34900000000";
   const mensaje = encodeURIComponent(
-    "Hola, me gustaría pedir cita en La Fábrica de Sonrisas 😊"
+    "Hola, me gustaría pedir cita 😊"
   );
   const href = `https://wa.me/${numero}?text=${mensaje}`;
 

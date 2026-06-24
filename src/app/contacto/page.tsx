@@ -4,7 +4,7 @@ import ContactoForm from "./ContactoForm";
 
 export const metadata: Metadata = {
   title: "Contacto",
-  description: "Contacta con La Fábrica de Sonrisas en Granada. Dirección, teléfono, WhatsApp y formulario.",
+  description: "Contacta con la Clínica Dental Ejemplo. Dirección, teléfono, WhatsApp y formulario.",
 };
 
 export default function ContactoPage() {
@@ -12,8 +12,8 @@ export default function ContactoPage() {
     <div className="pt-16">
       <div className="relative h-64 md:h-80 overflow-hidden">
         <Image
-          src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/La-Fabrica-de-Sonrisas-bodegon-3.webp"
-          alt="La Fábrica de Sonrisas, Granada"
+          src="https://placehold.co/1400x500/2d2d2d/f2a98e?text=Clinica+Dental+Ejemplo"
+          alt="Clínica Dental Ejemplo"
           fill
           className="object-cover"
           priority
@@ -22,10 +22,10 @@ export default function ContactoPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#2d2d2d]/50 via-transparent to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 px-4 pb-8 text-center text-white">
           <h1 className="text-4xl md:text-5xl font-black drop-shadow mb-2">
-            Estamos en el <span className="text-[#f2a98e]">Realejo</span>
+            Estamos en el <span className="text-[#f2a98e]">centro</span>
           </h1>
           <p className="text-white/85 drop-shadow">
-            En el corazón de uno de los barrios más bonitos de Granada. Te esperamos.
+            En el corazón de la ciudad. Te esperamos.
           </p>
         </div>
       </div>
@@ -36,12 +36,12 @@ export default function ContactoPage() {
             <h2 className="text-2xl font-black text-[#2d2d2d] mb-6">Datos de contacto</h2>
             <div className="space-y-4">
               <ContactItem icon="📍" title="Dirección">
-                <p>C. Molinos 34</p>
-                <p>Realejo, 18009 Granada</p>
+                <p>Calle Mayor 1</p>
+                <p>Centro, 28013 Madrid</p>
               </ContactItem>
               <ContactItem icon="📞" title="Teléfono">
-                <a href="tel:958227474" className="hover:text-[#e07a5f] transition-colors font-semibold">
-                  958 22 74 74
+                <a href="tel:900000000" className="hover:text-[#e07a5f] transition-colors font-semibold">
+                  900 000 000
                 </a>
               </ContactItem>
               <ContactItem icon="🕘" title="Horario">
@@ -50,34 +50,29 @@ export default function ContactoPage() {
               </ContactItem>
               <ContactItem icon="💬" title="WhatsApp / redes">
                 <a
-                  href={`https://wa.me/34958227474?text=${encodeURIComponent("Hola, me gustaría pedir cita en La Fábrica de Sonrisas 😊")}`}
+                  href={`https://wa.me/34900000000?text=${encodeURIComponent("Hola, me gustaría pedir cita 😊")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366] text-white text-sm font-semibold hover:bg-[#1fba57] transition-colors"
                 >
                   Escribir por WhatsApp
                 </a>
-                <a
-                  href="https://www.instagram.com/lafabricadesonrisasgranada/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-2 inline-flex items-center gap-1 text-sm text-[#e07a5f] hover:underline"
-                >
-                  @lafabricadesonrisasgranada
-                </a>
+                <span className="mt-2 inline-flex items-center gap-1 text-sm text-[#8b7d72]">
+                  @clinicadental.ejemplo
+                </span>
               </ContactItem>
             </div>
 
             <div className="mt-8 rounded-3xl overflow-hidden h-64">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3177.1766555832447!2d-3.5984!3d37.1760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcb69e1b19e5%3A0x4b5b3e3e3e3e3e3e!2sCalle%20de%20los%20Molinos%2C%2034%2C%2018009%20Granada!5e0!3m2!1ses!2ses!4v1"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-3.7100%2C40.4100%2C-3.6900%2C40.4200&layer=mapnik&marker=40.4168%2C-3.7038"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Mapa La Fábrica de Sonrisas"
+                title="Mapa clínica dental ejemplo"
               />
             </div>
           </div>

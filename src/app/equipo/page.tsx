@@ -4,43 +4,43 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "La clínica y el equipo",
-  description: "Conoce a la Dra. Hunayda Bumedien y al equipo de La Fábrica de Sonrisas. Odontología integrativa en el Realejo, Granada.",
+  description: "Conoce al equipo de la Clínica Dental Ejemplo. Odontología integrativa y mínimamente invasiva.",
 };
 
 const equipo = [
   {
-    nombre: "Dra. Hunayda Bumedien Hach Abdelgani",
+    nombre: "Dra. Ana García",
     especialidad: "Dirección clínica · Ortodoncia · Estética dental",
-    bio: "Fundadora de La Fábrica de Sonrisas. Licenciada en Odontología por la UGR, Máster en Ortodoncia y Ortopedia Dentofacial por la UAL y Máster en el Sistema Invisalign. Pionera en odontología integrativa en Granada. Premio Nacional de Medicina (Odontología) 2023 y Premio Europeo Mejor Trayectoria Profesional 2023.",
-    imagen: "https://www.lafabricadesonrisasgranada.com/wp-content/uploads/lfds-hunayda-scaled.webp",
-    badges: ["🏆 Premio Nacional 2023", "🏆 Premio Europeo 2023"],
+    bio: "Fundadora de la clínica. Licenciada en Odontología, Máster en Ortodoncia y Ortopedia Dentofacial y Máster en el Sistema Invisalign. Pionera en odontología integrativa. Premio de Excelencia en Odontología 2023.",
+    imagen: "https://placehold.co/400x400/f5ede0/8b7d72?text=Dra.+Garcia",
+    badges: ["🏆 Premio Excelencia 2023"],
   },
   {
-    nombre: "Marta Salvador",
+    nombre: "Marta López",
     especialidad: "Gestión de Agenda · Atención al Paciente",
-    bio: "La primera sonrisa que te recibe, la voz tras el teléfono y la persona con la que Whatsappeas. Perfeccionista, siempre sonriente y con una de las mejores tartas de queso de la provincia. Experta en rutas de senderismo por Granada: pregúntale, se las sabe todas. También le gustan los animales y las pelis de serie Z.",
-    imagen: "https://www.lafabricadesonrisasgranada.com/wp-content/uploads/lfds-marta.webp",
+    bio: "La primera sonrisa que te recibe, la voz tras el teléfono y la persona con la que Whatsappeas. Perfeccionista, siempre sonriente. Experta en hacer que cada paciente se sienta como en casa desde el primer momento.",
+    imagen: "https://placehold.co/400x400/f5ede0/8b7d72?text=Marta+Lopez",
     badges: [],
   },
   {
-    nombre: "Juanfran de Haro",
+    nombre: "Juan Fernández",
     especialidad: "Gerencia · Atención al paciente",
-    bio: "Se encarga de la gestión administrativa y financiera de La Fábrica. También hace lo que puede en marketing y el ámbito digital. Tipo simpático, educado y resolutivo. En sus ratos libres: películas raras, baloncesto y escritura. MBA por la UPV y experto en gestión de clínicas dentales.",
-    imagen: "https://www.lafabricadesonrisasgranada.com/wp-content/uploads/lfds-juanfran.webp",
+    bio: "Se encarga de la gestión administrativa y financiera de la clínica. También hace lo que puede en marketing y el ámbito digital. Tipo simpático, educado y resolutivo. MBA y experto en gestión de clínicas dentales.",
+    imagen: "https://placehold.co/400x400/f5ede0/8b7d72?text=Juan+Fernandez",
     badges: [],
   },
   {
-    nombre: "Fran Torres",
+    nombre: "Francisco Ruiz",
     especialidad: "Higienista Bucodental",
-    bio: "Fran se fue a Segovia, pero luego volvió.",
-    imagen: "https://www.lafabricadesonrisasgranada.com/wp-content/uploads/lfds-fran-scaled.webp",
+    bio: "Experto en higiene bucodental y periodoncia preventiva. Meticuloso, cercano y con una habilidad especial para que la revisión se pase volando. Sus pacientes siempre salen con los dientes brillando.",
+    imagen: "https://placehold.co/400x400/f5ede0/8b7d72?text=Francisco+Ruiz",
     badges: [],
   },
   {
-    nombre: "Dr. Javier Manzano",
+    nombre: "Dr. Carlos Martínez",
     especialidad: "Cirugía Bucal · Implantología",
-    bio: "Dedicación exclusiva a la cirugía bucal, implantología e implantoprótesis. Doctor Internacional por la UGR, Premio Nacional Fin de Carrera y autor de más de 50 artículos internacionales. Fan incondicional de King África.",
-    imagen: "https://www.lafabricadesonrisasgranada.com/wp-content/uploads/lfds-javier.webp",
+    bio: "Dedicación exclusiva a la cirugía bucal, implantología e implantoprótesis. Doctor por la Universidad Complutense, autor de más de 50 artículos internacionales. Premio Nacional Fin de Carrera.",
+    imagen: "https://placehold.co/400x400/f5ede0/8b7d72?text=Dr.+Martinez",
     badges: ["🏆 Premio Nacional Fin de Carrera", "📚 +50 artículos internacionales"],
   },
 ];
@@ -50,8 +50,8 @@ export default function EquipoPage() {
     <div className="pt-16 pb-0">
       <div className="relative h-80 md:h-[28rem] overflow-hidden">
         <Image
-          src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/imagen-nueva-eqipo-la-fabrica-de-sonrisas.png"
-          alt="Equipo de La Fábrica de Sonrisas"
+          src="https://placehold.co/1400x600/2d2d2d/f2a98e?text=Nuestro+equipo"
+          alt="Equipo de la clínica dental"
           fill
           className="object-cover"
           style={{ objectPosition: "center 15%" }}
@@ -100,8 +100,8 @@ export default function EquipoPage() {
         {/* Premios */}
         <div className="grid sm:grid-cols-3 gap-4 mb-16">
           {[
-            { icon: "🥇", titulo: "Premio Nacional Salud Bucodental 2022", desc: "Andalucía Oriental" },
-            { icon: "🥇", titulo: "Premio Nacional de Medicina", desc: "Especialidad Odontología · 2023" },
+            { icon: "🥇", titulo: "Premio Excelencia Odontológica", desc: "Mejor clínica de la región" },
+            { icon: "🥇", titulo: "Mejor Clínica Dental del Año", desc: "Especialidad Odontología · 2023" },
             { icon: "🥇", titulo: "Premio Europeo", desc: "Mejor Trayectoria Profesional · 2023" },
           ].map((p) => (
             <div key={p.titulo} className="bg-gradient-to-br from-[#e07a5f]/10 to-[#fdf4eb] rounded-2xl p-5 text-center border border-[#e07a5f]/20">
@@ -131,14 +131,14 @@ export default function EquipoPage() {
               <p>
                 Somos especialistas en <strong className="text-[#2d2d2d]">pacientes con miedo al dentista</strong>.
                 Sabemos que muchas personas llevan años sin venir por eso.
-                En La Fábrica de Sonrisas, eso tiene solución.
+                En nuestra clínica, eso tiene solución.
               </p>
             </div>
           </div>
           <div className="relative aspect-square rounded-3xl overflow-hidden">
             <Image
-              src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/como-lo-hacemos-fabrica-de-sonrisas.webp"
-              alt="Cómo trabajamos en La Fábrica de Sonrisas"
+              src="https://placehold.co/600x600/f5ede0/8b7d72?text=Como+trabajamos"
+              alt="Cómo trabajamos en la clínica"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"

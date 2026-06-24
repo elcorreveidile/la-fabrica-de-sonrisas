@@ -12,7 +12,7 @@ export default function PrivacidadPage() {
       <div className="prose prose-sm max-w-none text-[#8b7d72] space-y-6">
         <section>
           <h2 className="text-lg font-bold text-[#2d2d2d]">1. Responsable del tratamiento</h2>
-          <p>La Fábrica de Sonrisas · C. Molinos 34, 18009 Granada · [email por confirmar]</p>
+          <p>Clínica Dental Ejemplo · Calle Mayor 1, 28013 Madrid · [email por confirmar]</p>
         </section>
         <section>
           <h2 className="text-lg font-bold text-[#2d2d2d]">2. Datos recogidos</h2>

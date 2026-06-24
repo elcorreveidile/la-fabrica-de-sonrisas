@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,17 +6,12 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <div className="mb-3">
-              <Image
-                src="https://www.lafabricadesonrisasgranada.com/wp-content/uploads/07_Verbena_FABRICA_SONRISAS_Marca_fecha_negroajuste.png"
-                alt="La Fábrica de Sonrisas"
-                width={160}
-                height={56}
-                className="h-10 w-auto object-contain brightness-0 invert"
-              />
+            <div className="mb-3 flex items-center gap-2">
+              <span className="text-2xl font-black text-[#e07a5f]">●</span>
+              <span className="font-black text-white text-base">Clínica Dental Ejemplo</span>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
-              Odontología integrativa y mínimamente invasiva en el corazón del Realejo, Granada.
+              Odontología integrativa y mínimamente invasiva. Web de demostración.
             </p>
           </div>
 
@@ -35,24 +29,18 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-3 text-[#e07a5f]">Contacto</h3>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>C. Molinos 34, Realejo</li>
-              <li>18009 Granada</li>
+              <li>Calle Mayor 1, Centro</li>
+              <li>28013 Madrid</li>
               <li className="flex items-center gap-1">
                 <span>📞</span>
-                <a href="tel:958227474" className="hover:text-white transition-colors">958 22 74 74</a>
+                <a href="tel:900000000" className="hover:text-white transition-colors">900 000 000</a>
               </li>
               <li>L–V 9:30–18:30</li>
               <li>
-                <a href="https://www.instagram.com/lafabricadesonrisasgranada/" target="_blank" rel="noopener noreferrer"
-                  className="hover:text-white transition-colors text-xs">
-                  Instagram · @lafabricadesonrisasgranada
-                </a>
+                <span className="text-xs text-gray-500">Instagram · @clinicadental.ejemplo</span>
               </li>
               <li>
-                <a href="https://www.youtube.com/@lafabricadesonrisas" target="_blank" rel="noopener noreferrer"
-                  className="hover:text-white transition-colors text-xs">
-                  YouTube · La Fábrica de Sonrisas
-                </a>
+                <span className="text-xs text-gray-500">YouTube · Clínica Dental Ejemplo</span>
               </li>
             </ul>
           </div>
@@ -64,7 +52,7 @@ export default function Footer() {
             <Link href="/legal/aviso-legal" className="hover:text-white transition-colors">Aviso legal</Link>
             <Link href="/legal/cookies" className="hover:text-white transition-colors">Cookies</Link>
           </div>
-          <p>© 2025 La Fábrica de Sonrisas · Granada</p>
+          <p>© 2025 Clínica Dental Ejemplo · Madrid</p>
         </div>
       </div>
     </footer>

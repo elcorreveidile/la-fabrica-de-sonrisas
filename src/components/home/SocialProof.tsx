@@ -1,12 +1,12 @@
 const testimonials = [
   {
-    texto: "Por fin un dentista donde entras sin ese nudo en el estómago. El equipo es una maravilla y Hunayda te explica todo con una paciencia infinita.",
+    texto: "Por fin un dentista donde entras sin ese nudo en el estómago. El equipo es una maravilla y la doctora te explica todo con una paciencia infinita.",
     nombre: "María G.",
     tratamiento: "Ortodoncia invisible",
     avatar: "👩",
   },
   {
-    texto: "Me operé de las muelas del juicio sin drama. La Dra. Hunayda explica todo con calma. Me fui a casa sin dolor y con una sonrisa.",
+    texto: "Me operé de las muelas del juicio sin drama. La doctora explica todo con calma. Me fui a casa sin dolor y con una sonrisa.",
     nombre: "Alejandro M.",
     tratamiento: "Cirugía oral",
     avatar: "👨",
@@ -24,7 +24,7 @@ const testimonials = [
     avatar: "👨🏻",
   },
   {
-    texto: "Marta en recepción es un sol. Te responde al WhatsApp en minutos. Y el resultado de mi ortodoncia ha sido increíble.",
+    texto: "La recepcionista es un sol. Te responde al WhatsApp en minutos. Y el resultado de mi ortodoncia ha sido increíble.",
     nombre: "Ana S.",
     tratamiento: "Ortodoncia",
     avatar: "👩🏼",
@@ -73,13 +73,13 @@ export default function SocialProof() {
         </div>
 
         <div className="bg-gradient-to-r from-[#e07a5f] to-[#c4614a] rounded-3xl p-8 text-white text-center">
-          <p className="text-2xl font-black mb-3">🏆 Triple reconocimiento de excelencia</p>
+          <p className="text-2xl font-black mb-3">🏆 Reconocimiento de excelencia</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-2 text-sm text-white/90">
-            <span>🥇 Premio Nacional Salud Bucodental 2022 · Andalucía Oriental</span>
+            <span>🥇 Premio Excelencia Odontológica</span>
             <span className="hidden sm:block text-white/40">|</span>
-            <span>🥇 Premio Nacional de Medicina · Odontología 2023</span>
+            <span>🥇 Mejor Clínica Dental del Año</span>
             <span className="hidden sm:block text-white/40">|</span>
-            <span>🥇 Premio Europeo Mejor Trayectoria 2023</span>
+            <span>🥇 Premio Europeo Trayectoria Profesional</span>
           </div>
         </div>
       </div>

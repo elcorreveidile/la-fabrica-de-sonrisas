@@ -3,7 +3,7 @@ import PresupuestadorWizard from "./PresupuestadorWizard";
 
 export const metadata: Metadata = {
   title: "Presupuestador interactivo",
-  description: "Calcula el coste orientativo de tu tratamiento dental en La Fábrica de Sonrisas, Granada. Rápido, sin compromiso.",
+  description: "Calcula el coste orientativo de tu tratamiento dental. Rápido, sin compromiso.",
 };
 
 export default function PresupuestadorPage() {

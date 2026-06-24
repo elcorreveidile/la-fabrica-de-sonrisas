@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "www.lafabricadesonrisasgranada.com",
+        hostname: "placehold.co",
       },
     ],
   },

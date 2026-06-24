@@ -99,9 +99,9 @@ export default function PresupuestadorWizard() {
       "de la clínica. Los precios son de referencia de mercado en Granada.",
       "El presupuesto definitivo se entrega tras la visita de valoración (gratuita).",
       "",
-      "Clínica La Fábrica de Sonrisas",
-      "C. Molinos 34, Realejo — 18009 Granada",
-      "Tel: 958 XXX XXX (confirmar)",
+      "Clínica Dental Ejemplo",
+      "Calle Mayor 1, Centro — 28013 Madrid",
+      "Tel: 900 000 000 (confirmar)",
       "Horario: L-V 9:30-18:30 (confirmar)",
     ].join("\n");
 
@@ -109,7 +109,7 @@ export default function PresupuestadorWizard() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "presupuesto-orientativo-fabrica-sonrisas.txt";
+    a.download = "presupuesto-orientativo-clinica-ejemplo.txt";
     a.click();
     URL.revokeObjectURL(url);
   }

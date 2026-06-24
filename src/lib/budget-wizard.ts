@@ -52,7 +52,7 @@ export const WIZARD_STEPS: WizardStep[] = [
   {
     id: "implantes-tipo",
     pregunta: "¿Qué tipo de solución buscas?",
-    descripcion: "En La Fábrica de Sonrisas ofrecemos varias opciones según tu caso.",
+    descripcion: "Ofrecemos varias opciones según tu caso.",
     opciones: [
       { label: "Implante convencional", value: "convencional", emoji: "🔩", nextStepId: "implantes-cantidad", treatmentSlugs: [] },
       { label: "Autotrasplante dental (usar un diente propio)", value: "autotrasplante", emoji: "🌱", nextStepId: null, treatmentSlugs: ["autotrasplante-dental"] },

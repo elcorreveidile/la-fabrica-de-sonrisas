@@ -12,11 +12,11 @@ export default function AvisoLegalPage() {
       <div className="prose prose-sm max-w-none text-[#8b7d72] space-y-6">
         <section>
           <h2 className="text-lg font-bold text-[#2d2d2d]">Identificación</h2>
-          <p>Este sitio es una <strong>demo de propuesta comercial</strong> no encargada, desarrollada por Por 2 Duros para demostrar las posibilidades de una web moderna para La Fábrica de Sonrisas, clínica dental ubicada en C. Molinos 34, 18009 Granada.</p>
+          <p>Este sitio es una <strong>demo de propuesta comercial</strong> para demostrar las posibilidades de una web moderna para una clínica dental.</p>
         </section>
         <section>
           <h2 className="text-lg font-bold text-[#2d2d2d]">Propiedad intelectual</h2>
-          <p>Los textos son de elaboración propia. Las fotografías son de stock libre (Unsplash/Pexels). Ningún logotipo, imagen corporativa o texto de la web actual de La Fábrica de Sonrisas ha sido reproducido.</p>
+          <p>Los textos son de elaboración propia con fines ilustrativos. Las fotografías son imágenes de muestra. Ningún dato real de ninguna clínica ha sido utilizado.</p>
         </section>
         <section>
           <h2 className="text-lg font-bold text-[#2d2d2d]">Precios</h2>

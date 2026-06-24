@@ -29,16 +29,16 @@ const openSans = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: "La Fábrica de Sonrisas — Clínica Dental en Granada",
-    template: "%s | La Fábrica de Sonrisas",
+    default: "Clínica Dental Ejemplo — Dentista de confianza",
+    template: "%s | Clínica Dental Ejemplo",
   },
   description:
-    "Clínica dental en el Realejo, Granada. Odontología integrativa y mínimamente invasiva. Especialistas en pacientes con miedo al dentista. Premio Nacional Salud Bucodental 2022.",
-  keywords: ["dentista Granada", "clínica dental Realejo", "ortodoncia Granada", "implantes Granada", "miedo dentista"],
+    "Clínica dental de ejemplo. Odontología integrativa y mínimamente invasiva. Especialistas en pacientes con miedo al dentista.",
+  keywords: ["dentista", "clínica dental", "ortodoncia", "implantes", "miedo dentista"],
   robots: { index: false, follow: false },
   openGraph: {
-    title: "La Fábrica de Sonrisas — Clínica Dental en Granada",
-    description: "Odontología integrativa y mínimamente invasiva en el Realejo, Granada.",
+    title: "Clínica Dental Ejemplo — Dentista de confianza",
+    description: "Odontología integrativa y mínimamente invasiva. Web de demostración.",
     locale: "es_ES",
     type: "website",
   },
@@ -59,19 +59,19 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Dentist",
-              name: "La Fábrica de Sonrisas",
-              description: "Clínica dental de odontología integrativa en Granada",
+              name: "Clínica Dental Ejemplo",
+              description: "Clínica dental de odontología integrativa. Web de demostración.",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "C. Molinos 34",
-                addressLocality: "Granada",
-                postalCode: "18009",
+                streetAddress: "Calle Mayor 1",
+                addressLocality: "Madrid",
+                postalCode: "28013",
                 addressCountry: "ES",
               },
               geo: {
                 "@type": "GeoCoordinates",
-                latitude: 37.176,
-                longitude: -3.5984,
+                latitude: 40.4168,
+                longitude: -3.7038,
               },
               telephone: "958-XXX-XXX",
               openingHours: "Mo-Fr 09:30-18:30",
