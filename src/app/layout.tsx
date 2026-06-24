@@ -53,6 +53,8 @@ export default function RootLayout({
     <html lang="es" className={`${nunito.variable} ${openSans.variable} ${poppins.variable} h-full`}>
       <head>
         <meta name="robots" content="noindex, nofollow" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

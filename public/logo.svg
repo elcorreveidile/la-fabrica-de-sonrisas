@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64">
+  <!-- Icon circle -->
+  <circle cx="32" cy="32" r="30" fill="#e07a5f"/>
+  <!-- Tooth shape, white -->
+  <path fill="white" d="
+    M 16 34
+    C 15 20 20 14 26 15
+    C 28 16 29 20 32 20
+    C 35 20 36 16 38 15
+    C 44 14 49 20 48 34
+    C 47 40 45 47 43 52
+    C 42 55 40 56 39 54
+    L 38 47
+    C 37 43 35 41 32 41
+    C 29 41 27 43 26 47
+    L 25 54
+    C 24 56 22 55 21 52
+    C 19 47 17 40 16 34 Z
+  "/>
+  <!-- Wordmark -->
+  <text x="74" y="26" font-family="Nunito, system-ui, sans-serif" font-weight="900" font-size="18" fill="#2d2d2d" letter-spacing="-0.3">Clínica Dental</text>
+  <text x="74" y="47" font-family="Nunito, system-ui, sans-serif" font-weight="900" font-size="18" fill="#e07a5f" letter-spacing="-0.3">Ejemplo</text>
+</svg>

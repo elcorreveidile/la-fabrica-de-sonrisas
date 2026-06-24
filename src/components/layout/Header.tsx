@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -17,11 +18,15 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#fdf8f3]/95 backdrop-blur-sm border-b border-[#f5ede0]">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
-          <span className="text-xl font-black text-[#e07a5f]">●</span>
-          <span className="font-black text-[#2d2d2d] text-base leading-tight">
-            Clínica Dental <span className="text-[#e07a5f]">Ejemplo</span>
-          </span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.svg"
+            alt="Clínica Dental Ejemplo"
+            width={200}
+            height={48}
+            className="h-10 w-auto"
+            priority
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-1">

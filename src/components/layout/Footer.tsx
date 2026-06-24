@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -6,9 +7,14 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <div className="mb-3 flex items-center gap-2">
-              <span className="text-2xl font-black text-[#e07a5f]">●</span>
-              <span className="font-black text-white text-base">Clínica Dental Ejemplo</span>
+            <div className="mb-3">
+              <Image
+                src="/logo.svg"
+                alt="Clínica Dental Ejemplo"
+                width={180}
+                height={44}
+                className="h-9 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
               Odontología integrativa y mínimamente invasiva. Web de demostración.
